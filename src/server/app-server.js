@@ -1,9 +1,19 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: Andy
+ * @Date: 2019-12-06 14:44:08
+ * @LastEditors  : Andy
+ * @LastEditTime : 2020-01-27 16:24:38
+ */
 import express from 'express'
 import path from 'path'
 import favicon from 'serve-favicon'
 import logger from 'morgan'
 import bodyParser from 'body-parser'
 import webpack from 'webpack'
+
+import user from './router/user'
 
 // 引入history模块
 import history from 'connect-history-api-fallback'
@@ -39,7 +49,10 @@ app.use(express.static(path.join(__dirname, 'views')))
 app.get('/', function (req, res) {
   res.sendFile('./views/index.html')
 })
-
+app.get('/admin', function (req, res) {
+  res.sendFile('./views/admin.html')
+})
+app.use('/user', user)
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   var err = new Error('Not Found')

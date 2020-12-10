@@ -1,0 +1,30 @@
+{
+  "username": "codebodyer",
+  "password": "123456",
+  "host": "127.0.0.1",
+  "port": "27017",
+  "replicaSet": {
+    "name": "",
+    "members": [
+      {
+        "host": "",
+        "port": ""
+      },
+      {
+        "host": "",
+        "port": ""
+      },
+      {
+        "host": "",
+        "port": ""
+      }
+    ]
+  },
+  "db": "codebody",
+  "options": {
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "poolSize": 5,
+    "keepAlive": 120
+  }
+}

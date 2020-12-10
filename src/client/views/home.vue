@@ -18,15 +18,15 @@
         <!-- post-summary-text -->
         <div class="summary-links">
           <a href="#">
-            <i class="fa fa-bookmark"></i>
+            <font-awesome-icon :icon="['fas', 'bookmark']" />
             <span>分类：Git实战手册</span>
           </a>
           <a href="#">
-            <i class="fa fa-tags"></i>
+            <font-awesome-icon :icon="['fas', 'tags']" />
             <span>标签：#Git</span>
           </a>
           <a href="#">
-            <i class="fa fa-eye"></i>
+            <font-awesome-icon :icon="['fas', 'eye']" />
             <span>浏览：6</span>
           </a>
         </div>
